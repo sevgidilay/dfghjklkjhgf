@@ -1,34 +1,34 @@
-# dfghjklkjhgf
+# grading
 import java.util.Scanner;
 public class NotOrtalamasi {
 
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int mat, fizik, kimya, turkce, tarih, muzik;
+        int math, phys, chem, turkish, hist, art;
 
         System.out.println("Matematik notu giriniz: ");
-        mat = scan.nextInt();
+        math = scan.nextInt();
 
         System.out.println("Fizik notu giriniz: ");
-        fizik = scan.nextInt();
+        phys = scan.nextInt();
 
         System.out.println("Kimya notu giriniz: ");
-        kimya = scan.nextInt();
+        chem = scan.nextInt();
 
         System.out.println("Türkçe notu giriniz: ");
-        turkce = scan.nextInt();
+        turkish = scan.nextInt();
 
         System.out.println("Tarih notu giriniz: ");
-        tarih = scan.nextInt();
+        hist = scan.nextInt();
 
         System.out.println("Müzik notu giriniz: ");
-        muzik = scan.nextInt();
+        art = scan.nextInt();
 
         scan.close();
 
-        int ortalama = (mat + fizik + kimya + turkce + tarih + muzik) / 6;
-        String sonuc = (ortalama >= 60) ? "Sınıfı geçti" : "Sınıfta kaldı";
+        int avg = (math + phys + chem + turkish + hist + art) / 6;
+        String result = (avg >= 60) ? "Sınıfı geçti" : "Sınıfta kaldı";
         System.out.println("Ortalama: " + ortalama + ".  " + sonuc);
 
     }
